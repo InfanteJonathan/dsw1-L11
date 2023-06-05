@@ -37,7 +37,7 @@ public class DiasRepository {
 
 		Dias viernes = new Dias();
 		viernes.setName("viernes");
-		lunes.setCurrency(Currency.FRIDAY);
+		viernes.setCurrency(Currency.FRIDAY);
 		dias.put(viernes.getName(), viernes);
 
 		Dias sabado = new Dias();
