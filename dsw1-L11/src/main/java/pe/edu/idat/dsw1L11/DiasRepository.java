@@ -15,40 +15,40 @@ public class DiasRepository {
 
 	@PostConstruct
 	public void initData() {
-		Dias spain = new Dias();
-		spain.setName("Spain");
-		spain.setCapital("Madrid");
-		spain.setCurrency(Currency.EUR);
-		spain.setPopulation(46704314);
-
-		dias.put(spain.getName(), spain);
-
 		Dias lunes = new Dias();
-		lunes.setName("");
+		lunes.setName("lunes");
+		lunes.setCurrency(Currency.MONDAY);
+		dias.put(lunes.getName(), lunes);
 
-		Dias poland = new Dias();
-		poland.setName("Poland");
-		poland.setCapital("Warsaw");
-		poland.setCurrency(Currency.PLN);
-		poland.setPopulation(38186860);
+		Dias martes = new Dias();
+		martes.setName("martes");
+		martes.setCurrency(Currency.TUESDAY);
+		dias.put(martes.getName(), martes);
 
-		dias.put(poland.getName(), poland);
+		Dias miercoles = new Dias();
+		miercoles.setName("miercoles");
+		miercoles.setCurrency(Currency.WEDNESDAY);
+		dias.put(miercoles.getName(), miercoles);
 
-		Dias uk = new Dias();
-		uk.setName("United Kingdom");
-		uk.setCapital("London");
-		uk.setCurrency(Currency.GBP);
-		uk.setPopulation(63705000);
+		Dias jueves = new Dias();
+		jueves.setName("jueves");
+		jueves.setCurrency(Currency.THURSDAY);
+		dias.put(jueves.getName(), jueves);
 
-		dias.put(uk.getName(), uk);
+		Dias viernes = new Dias();
+		viernes.setName("viernes");
+		lunes.setCurrency(Currency.FRIDAY);
+		dias.put(viernes.getName(), viernes);
 
-		Dias pe = new Dias();
-		pe.setName("Peru");
-		pe.setCapital("Lima");
-		pe.setCurrency(Currency.PEN);
-		pe.setPopulation(33000001);
+		Dias sabado = new Dias();
+		sabado.setName("sabado");
+		sabado.setCurrency(Currency.SATURDAY);
+		dias.put(sabado.getName(), sabado);
 
-		dias.put(pe.getName(), pe);
+		Dias domingo = new Dias();
+		domingo.setName("domingo");
+		domingo.setCurrency(Currency.SUNDAY);
+		dias.put(domingo.getName(), domingo);
 
 	}
 
